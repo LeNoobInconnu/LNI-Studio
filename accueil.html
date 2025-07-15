@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montez Pro ! - Tutoriels de Montage Vidéo</title>
+    <!-- Chargement de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Couleur de fond légère */
+            color: #333;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .btn-primary {
+            background-color: #2575fc;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #6a11cb;
+        }
+        .video-tag {
+            background-color: #ef4444; /* Rouge pour "Vidéo" */
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.375rem; /* rounded-md */
+            font-size: 0.75rem; /* text-xs */
+            font-weight: 600; /* font-semibold */
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- En-tête (Header) -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo du site -->
+            <a href="index.html" class="text-3xl font-bold text-gray-800">Montez Pro !</a>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 font-medium">Accueil</a>
+                <a href="#tutoriels" class="text-gray-600 hover:text-blue-600 font-medium">Tutoriels</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Logiciels</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Ressources</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+            </nav>
+            <!-- Bouton de menu mobile (pour les petits écrans) -->
+            <button class="md:hidden text-gray-600 hover:text-blue-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Section Héro (Hero Section) -->
+    <section class="gradient-bg text-white py-20 px-4 text-center rounded-b-lg shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Devenez le monteur que vous rêvez d'être !</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Apprenez le montage vidéo, du débutant à l'expert, avec nos tutoriels clairs et pratiques.</p>
+            <a href="#tutoriels" class="btn-primary inline-block text-lg font-semibold rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                Découvrir les Tutoriels
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Niveaux de Montage -->
+    <section id="tutoriels" class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Choisissez votre Niveau de Montage</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Carte Débutant -->
+                <div class="bg-white rounded-xl p-8 text-center card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/150x150/6a11cb/ffffff?text=D%C3%A9butant" alt="Icône Débutant" class="mx-auto mb-6 rounded-full shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Niveau Débutant</h3>
+                    <p class="text-gray-600 mb-6">Apprenez les bases : interface, importation, coupe, transitions simples et export.</p>
+                    <a href="tutos-debutant.html" class="btn-primary inline-block font-semibold">Commencer ici</a>
+                </div>
+                <!-- Carte Intermédiaire -->
+                <div class="bg-white rounded-xl p-8 text-center card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/150x150/2575fc/ffffff?text=Interm%C3%A9diaire" alt="Icône Intermédiaire" class="mx-auto mb-6 rounded-full shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Niveau Intermédiaire</h3>
+                    <p class="text-gray-600 mb-6">Maîtrisez les effets, le mixage audio, l'étalonnage couleur et les titres avancés.</p>
+                    <a href="tutos-intermediaire.html" class="btn-primary inline-block font-semibold">Progresser</a>
+                </div>
+                <!-- Carte Avancé -->
+                <div class="bg-white rounded-xl p-8 text-center card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/150x150/00d2ff/ffffff?text=Avanc%C3%A9" alt="Icône Avancé" class="mx-auto mb-6 rounded-full shadow-md">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Niveau Avancé</h3>
+                    <p class="text-gray-600 mb-6">Explorez le motion design, les VFX, l'incrustation fond vert et le sound design.</p>
+                    <a href="tutos-avance.html" class="btn-primary inline-block font-semibold">Devenir expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tutoriels Récents -->
+    <section id="recent-tutos" class="bg-gray-100 py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Nos Derniers Tutoriels</h2>
+
+            <!-- Tutoriels Débutant -->
+            <h3 class="text-3xl font-bold text-gray-800 mb-8 mt-12">Niveau Débutant</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Tuto Débutant 1 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/a78bfa/ffffff?text=Interface" alt="Miniature tutoriel interface" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Découvrir l'Interface de Montage</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Familiarisez-vous avec les panneaux et outils essentiels de votre logiciel.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Débutant 2 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/818cf8/ffffff?text=Importation" alt="Miniature tutoriel importation" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Importer et Organiser vos Médias</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Apprenez à importer vos vidéos et à organiser vos fichiers pour un workflow efficace.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Débutant 3 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/6366f1/ffffff?text=Timeline" alt="Miniature tutoriel timeline" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Les Coupes de Base et la Timeline</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Maîtrisez les outils de coupe et l'utilisation de la timeline pour assembler vos plans.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Débutant 4 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/4f46e5/ffffff?text=Transitions" alt="Miniature tutoriel transitions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Ajouter des Transitions Simples</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Découvrez comment utiliser des transitions pour lier vos séquences de manière fluide.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Débutant 5 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/4338ca/ffffff?text=Export" alt="Miniature tutoriel export" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Exporter Votre Première Vidéo</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Apprenez les réglages d'exportation pour partager vos créations sur le web.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutoriels Intermédiaire -->
+            <h3 class="text-3xl font-bold text-gray-800 mb-8 mt-12">Niveau Intermédiaire</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Tuto Intermédiaire 1 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/c084fc/ffffff?text=Effets" alt="Miniature tutoriel effets vidéo" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Maîtriser les Effets Vidéo Essentiels</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Explorez les effets courants pour améliorer l'impact visuel de vos séquences.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Intermédiaire 2 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/a855f7/ffffff?text=Audio" alt="Miniature tutoriel mixage audio" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Mixage Audio : Nettoyer et Équilibrer</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Améliorez la qualité sonore de vos vidéos avec des techniques de mixage audio.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Intermédiaire 3 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/9333ea/ffffff?text=Colorim%C3%A9trie" alt="Miniature tutoriel étalonnage couleur" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Étalonnage Couleur Basique pour un Look Pro</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Donnez à vos vidéos un aspect cinématographique avec l'étalonnage des couleurs.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Intermédiaire 4 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/7e22ce/ffffff?text=Titres" alt="Miniature tutoriel titres animés" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Créer des Titres Animés Simples</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Apprenez à créer des titres dynamiques pour vos intros et outros.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Intermédiaire 5 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/6b21a8/ffffff?text=Raccourcis" alt="Miniature tutoriel raccourcis clavier" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Optimiser votre Workflow avec les Raccourcis Clavier</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Accélérez votre montage en utilisant les raccourcis clavier essentiels.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutoriels Avancé -->
+            <h3 class="text-3xl font-bold text-gray-800 mb-8 mt-12">Niveau Avancé</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Tuto Avancé 1 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/f43f5e/ffffff?text=Motion+Design" alt="Miniature tutoriel motion design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Introduction au Motion Design Complexe</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : After Effects</p>
+                        <p class="text-gray-700 mb-4">Créez des animations graphiques sophistiquées pour vos projets.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Avancé 2 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/ef4444/ffffff?text=Fond+Vert" alt="Miniature tutoriel fond vert" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Techniques d'Incrustation Fond Vert (Chroma Key)</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Apprenez à retirer les fonds verts et à intégrer des éléments dans vos scènes.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Avancé 3 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/dc2626/ffffff?text=Sound+Design" alt="Miniature tutoriel sound design" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Sound Design : Créer une Ambiance Sonore</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Découvrez comment le son peut transformer l'expérience de vos vidéos.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Avancé 4 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/b91c1c/ffffff?text=Tracking" alt="Miniature tutoriel suivi de mouvement" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Suivi de Mouvement et Stabilisation</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Apprenez à stabiliser vos plans tremblants et à suivre des objets en mouvement.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+                <!-- Tuto Avancé 5 -->
+                <div class="bg-white rounded-xl overflow-hidden card-shadow hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/600x350/991b1b/ffffff?text=Workflow+Pro" alt="Miniature tutoriel workflow pro" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="video-tag">Tutoriel Vidéo</span>
+                        <h4 class="text-xl font-semibold mb-2 text-gray-800">Workflow de Montage Professionnel</h4>
+                        <p class="text-gray-600 text-sm mb-4">Logiciel : Général</p>
+                        <p class="text-gray-700 mb-4">Organisez votre projet de A à Z comme un professionnel pour des productions complexes.</p>
+                        <a href="tuto-detail.html" class="text-blue-600 hover:underline font-medium">Voir le tutoriel &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="tutos-debutant.html" class="btn-primary inline-block text-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                    Voir tous les tutoriels
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Appel à l'action -->
+    <section class="gradient-bg text-white py-16 px-4 text-center rounded-t-lg shadow-lg">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-6">Prêt à passer au niveau supérieur ?</h2>
+            <p class="text-xl mb-8 opacity-90">Rejoignez notre communauté et recevez les dernières astuces et tutoriels directement dans votre boîte mail !</p>
+            <form class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Votre adresse e-mail" class="flex-grow p-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+                    <button type="submit" class="btn-primary font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Pied de page (Footer) -->
+    <footer class="bg-gray-800 text-white py-8 px-4 rounded-b-lg">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Montez Pro ! Tous droits réservés.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">Politique de Confidentialité</a>
+                <a href="#" class="text-gray-400 hover:text-white">Conditions d'Utilisation</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
